@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, redirect, session
 import sqlite3
 import random
@@ -155,3 +156,4 @@ def logout():
 
 if __name__ == "__main__":
     app.run()
+>>>>>>> e438721aaa463f48684c4deb06ab523feb6fed5d
