@@ -1,0 +1,299 @@
+body,html{
+margin:0;
+font-family:Arial;
+}
+
+
+
+.card{
+background:rgba(0,0,0,0.75);
+padding:25px;
+width:320px;
+color:white;
+border-radius:10px;
+text-align:center;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:none;
+border-radius:5px;
+}
+
+.btn{
+width:100%;
+padding:10px;
+margin:5px 0;
+border:none;
+background:#ff9800;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#e68900;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+}
+
+.error{
+color:red;
+}
+hr {
+  margin: 15px 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+}
+
+/* Main Card */
+.game-card {
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* Title */
+.game-card h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stats div {
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button {
+    background: #ff9800;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 140px;
+    transition: 0.2s;
+}
+
+.buttons button:hover {
+    background: #ffb74d;
+    transform: scale(1.05);
+}
+
+/* Result Section */
+.result-box {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.choice-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.choice {
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.choice h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.result-text {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Logout */
+.logout {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffcccb;
+    text-decoration: none;
+}
+
+/* ---------------- MOBILE OPTIMIZATION ---------------- */
+@media (max-width: 480px) {
+    .game-card h1 {
+        font-size: 22px;
+    }
+
+    .buttons button {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
+/* ---------------- TOGGLE BUTTON ---------------- */
+.toggle-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ---------------- LIGHT MODE ---------------- */
+body.light {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: #222;
+}
+
+body.light .game-card {
+    background: rgba(255,255,255,0.9);
+    color: #222;
+}
+
+body.light .stats div,
+body.light .choice {
+    background: rgba(0,0,0,0.05);
+}
+
+body.light .buttons button {
+    background: #2196f3;
+    color: white;
+}
+
+body.light .buttons button:hover {
+    background: #64b5f6;
+}
+
+body.light .logout {
+    color: #333;
+}
+/* ---------- AUTH LINKS (LOGIN / REGISTER) ---------- */
+.auth-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.auth-link a {
+    color: #ffffff;        /* dark-mode readable */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+    color: #ff9800;
+}
+
+/* Light mode support */
+body.light .auth-link {
+    color: #333;
+}
+
+body.light .auth-link a {
+    color: #222;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #ff9800;
+}
+.link-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #ff9800;
+    color: #000;
+    border-radius: 6px;
+}
+/* Style for auth links */
+.auth-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center; /* center on mobile */
+    color: #ddd;        /* text color for dark mode */
+}
+
+.auth-link a {
+    color: #ffffff;       /* link color */
+    font-weight: 600;
+    text-decoration: none; /* remove underline */
+    margin-left: 5px;
+}
+
+.auth-link a:hover {
+    color: #ff9800;       /* hover color */
+    text-decoration: underline;
+}
+
+/* Light mode support */
+body.light .auth-link {
+    color: #333;
+}
+
+body.light .auth-link a {
+    color: #222;
+}
+.auth-link a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ff9800;
+    color: #000;
+    border-radius: 6px;
+    margin-left: 5px;
+}
